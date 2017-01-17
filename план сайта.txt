@@ -1,0 +1,40 @@
+﻿.htacess   -   конфигурация сервера
+index.php  -   וглавный скрипт, который запускает сайт
+start.php   -   скрипт, который подгружает все окружение
+папка lib:
+	database_class.php - подключение к бд
+	node_class.php сортировка извлеченных данных в виде 2-3-дерева для более быстрого поиска
+	config.php - настройки сайта
+	objectdb_class.php - класс для работы с объектами в бд
+	select_class.php - класс для формироввания запроса типа select
+	paymentprocedure_class.php - класс для выполнения платежей
+	email_class.php - класс для рассылки писем 
+
+папка objects: готовые объекты данных
+	userdata_class.php - данные пользователя 
+	article_class.php - данные статьи в блоге
+	widget_class.php - данные виджета
+	
+папка controller
+	validator.php функции проверки запросов
+	url.php класс отображения адресса
+	route.php маршрутизатор
+	login.php вход на сайт
+	signin.php регистрация
+	logout.php выход
+
+папка view
+	main.php генерирует главную страницу
+	personal_page.php генерирует личную страницу
+	about.php страница о нас
+	faq.php часто задаваемые вопросы
+	header.php генерирует шапку сайта
+	footer.php генерирует поддон сайта
+	widgets.php виджеты поддона
+
+папка js - скрипты на js
+папка css - стилей 
+папка img - картинки
+папка txt
+
+
