@@ -2,31 +2,30 @@
 
 abstract class Config {
 
-	const SITENAME = "MyRusakov.ru";
+	const SITENAME = "";
 	const SECRET = "DGLJDG5";
 	const ADDRESS = "http://mysite.local";
-	const ADM_NAME = "Михаил Русаков";
-	const ADM_EMAIL = "admin@myrusakov.ru";
+	const ADM_NAME = "Давид";
+	const ADM_EMAIL = "admin@";
 	
 	const API_KEY = "DKEL39DL";
 	
 	const DB_HOST = "localhost";
 	const DB_USER = "root";
 	const DB_PASSWORD = "";
-	const DB_NAME = "myrusakov";
-	const DB_PREFIX = "xyz_";
+	const DB_NAME = "coach";
+	const DB_PREFIX = "";
 	const DB_SYM_QUERY = "?";
-	const DB_MAIN_TABLE_NAME = "mycouch_main";
+	const DB_MAIN_TABLE_NAME = "mycoach_main";
 	const DB_MAIN_TABLE_STRUCTURE = array( "class", "predicate", "value" );
 	
 	const DIR_IMG = "/images/";
 	const DIR_IMG_ARTICLES = "/images/articles/";
 	const DIR_AVATAR = "/images/avatars/";
-	const DIR_TMPL = "/home/mysite.local/www/tmpl/";
-	const DIR_EMAILS = "/home/mysite.local/www/tmpl/emails/";
+	const DIR_EMAILS = "";
 	
 	const LAYOUT = "main";
-	const FILE_MESSAGES = "/home/mysite.local/www/text/messages.ini";
+	const FILE_MESSAGES = "/home/mysite.local/www/txt/messages.ini";
 	
 	const FORMAT_DATE = "%d.%m.%Y %H:%M:%S";
 	
