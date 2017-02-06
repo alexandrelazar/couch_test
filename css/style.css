@@ -14,27 +14,23 @@ div{
 	height: 200px;
 	width: 100%;
 }
-.name{
-	padding: 30px 30px 0 30px;
-	font-size: 2em;
-	position: relative;
-	display: block;
-	color: rgb(32, 80, 129);
+.logo {
+    background-image: url(../img/coachlogo.jpg);
+    background-size: contain;
+    width: 511px;
+    height: 150px;
+    margin-left: 30%;
+    display: inherit;
 }
-
-.name::after{
-	content: "Эксклюзивное кадровое агенство";
-	font-size: 16px;
-	font-family:;
-	display: block;
-}
-.top-nav{
-	background-color: rgb(32, 80, 129);
-	color: #ffffff;
-	width: 100%;
-	top: 150px;
-	position: fixed;
-	z-index: 1;
+.top-nav {
+    background-color: #02b1eb;
+    color: #ffffff;
+    width: 100%;
+    top: 150px;
+    position: fixed;
+    z-index: 1;
+    display: block;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
 }
 
 .top-nav ul{
@@ -53,29 +49,114 @@ div{
 }
 
 .top-nav ul li:hover{
-	background-color: rgb(51, 122, 183);
 	color: rgb(243, 133, 54);
 }
 
 .wrapper{
-
+	width: 100%;
 }
 
 .image-wrapper{
-	height: 500px;
-	box-shadow: 0, 5px, 5px, rgba(0,0,0,0.2);
+	height: 300px;
+	width: 100%;
 	margin: 0px;
 	padding: 0px;
+	position: absolute;
+	top: 225px;
 }
 
 .main-image{
 	display: block;
 	position: relative;
-	background-image: url("./main-image.jpg");
+	background-image: url("../img/main-image.webp");
 	background-size: cover;
 	height: 100%;
 }
 .main-image::after{
+	content: " ";
+	display: block;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(55, 55, 55, 0.2);
+}
+.description{
+	position: absolute;
+	top: 70px;
+	left: 60px;
+	color: #ffffff;
+	width: 500px;
+}
+.description h2{
+	line-height: 1.1 em;
+}
+
+.mid-nav {
+    margin-top: 325px;
+    padding: 35px;
+}
+.nav-widget {
+    display: inline-block;
+    width: 400px;
+    height: 280px;
+    background-color: #4e5a61;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+.users-img {
+    margin-left: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/users.png);
+}
+.blog-img {
+    margin-left: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/blog-img.png);
+}
+
+.find-img {
+    margin-left: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/find.png);
+}
+
+.nav-widget a {
+    display: block;
+    background-color: #02b1eb;
+    width: 110px;
+    height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1px;
+    margin-left: 115px;
+}
+
+.query-img-wrapper{
+	height: 300px;
+	width: 100%;
+	position: relative;
+}
+
+.query-img {
+    background-image: url(../img/coachingimage1.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position-y: -150px;
+    color: rgb(243, 133, 54);
+    padding: 65px;
+    
+}
+
+.query-img::after{
 	content: "";
 	display: block;
 	position: absolute;
@@ -83,16 +164,36 @@ div{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color:rgba(55, 55, 55, 0.4);
+	background-color:rgba(55, 55, 55, 0.7);
 }
 
+.query-text{
+	position: absolute;
+	display: block;
+	text-align: center;
+	color: #ffffff;
+	width: 100%;
+	top: 30%;
+}
+
+.query-text a {
+    display: block;
+    background-color: #02b1eb;
+    width: 150px;
+    height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-left: 590px;
+}
 .content-wrapper{
 	width: 100%;
+	margin-bottom: 5px;
 }
 
-.media-container h1{
-	font-size: 3em;
+.media-container h2{
 	text-align: center;
+	margin-top: 30px;
 }
 
 form{
@@ -132,7 +233,7 @@ form{
 }
 
 .quote_box{
-	background-image: url(icon-quote.png);
+	background-image: url(../img/icon-quote.png);
     background-position: 15px center;
     background-repeat: no-repeat;
     font-family: georgia;
@@ -143,35 +244,78 @@ form{
 }
 
 .avatar{
-	background-image: url(main-image.jpg);
+	display: block;
+	background-image: url(../img/avatar.jpg);
     border-radius: 50%;
     width: 250px;
     height: 250px;
     background-size: cover;
-    margin-top: 20px;
     margin-left: 200px;
 }
 
-.info{
-	width: 48%;
-	display: inline-block;
-	margin-top: 20px;
-	position: absolute;
-}
-
-.media-container table{
-	width: 100%;
-	border-radius: 5px;
+.skills{
 	text-align: center;
+}
+
+.location-icon{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-image: url(../img/marker.png);
+}
+
+.location-block h4{
+	margin: 0px;
+	display: inline-block;
+}
+
+.media-container .social-links{
+	position: relative;
 	margin-top: 20px;
 }
 
-.media-container table tr{
+.media-container .social-links .facebook{
+	display: inline-block;
+	width: 30px;
 	height: 30px;
+	background-image: url(../img/social-media/portfolio/facebook.png);
+	background-size: cover;
+	margin-right: 10px;
 }
 
-.media-container table td {
-	border-bottom: solid 1px #ddd;
+.media-container .social-links .twitter{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/social-media/portfolio/twitter.png);
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.media-container .social-links .vk{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/social-media/portfolio/vk.png);
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.media-container .social-links .linkedin{
+	display: inline-block;
+	width:30px;
+	height: 30px;
+	background-image: url(../img/social-media/portfolio/linkedin.png);
+	background-size: cover;
+}
+
+.info {
+    width: 48%;
+    display: inline-block;
+    left: 51%;
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .audio{
@@ -181,21 +325,88 @@ form{
 
 .media-container{
 	width:48%;
-	padding-top: 50px;
-	position: relative;
-	float: left;
+	position: fixed;
+	top: 200px;
+	text-align: center;
 }
 
 .order{
-	display: block;
     font-size: 16px;
     border-radius: 5px;
-    color: white;
-    background-color: green;
-    width: 90%;
+    color: #ffffff;
+    background-color: #7af0ad;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
     height: 30px;
     margin-top: 10px;
     margin-left: 5%;
+    text-decoration: none;
+}
+
+.footer{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	top: -5px;
+	background-color: #4e5a61;
+}
+
+.footer-widget{
+	display: inline-block;
+    width: 600px;
+    height: 100%;
+    margin: 10px;
+    padding: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-logo{
+	width: 511px;
+	height: 150px;
+	background-image: url(../img/footer-logo.png);
+	position: absolute;
+	top: 20px;
+	left: 44px;
+	float: left;
+}
+
+.footer-widget .social-links{
+	position: relative;
+	top: 100px;
+}
+
+.footer-widget .social-links .facebook{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	background-image: url(../img/social-media/footer/facebook.png);
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.footer-widget .social-links .twitter{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	background-image: url(../img/social-media/footer/twitter.png);
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.footer-widget .social-links .vk{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	background-image: url(../img/social-media/footer/vk.png);
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.footer-widget .social-links .linkedin{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	background-image: url(../img/social-media/footer/linkedin.png);
+	background-size: cover;
 }
